@@ -20,7 +20,6 @@ end
 def printer(speakers)
   badges = batch_badge_creator(speakers)
   badges.each {|badge_string| puts badge_string}
-
   room_assignment = assign_rooms(speakers)
   room_assignment.each {|room_string| puts room_string}
 end
